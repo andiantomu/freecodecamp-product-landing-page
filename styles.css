@@ -1,0 +1,168 @@
+* {
+    --main-color: #EB26D5;
+    --secondary-color: #7C14D7;
+    --third-color: #FBF4FA;
+    --fourth-color: #c398e9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button:hover {
+    transform: scale(110%);
+    cursor: pointer;
+}
+header {
+    height: 10vh;
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+}
+#header-img {
+    height: 1.5rem;
+}
+#nav-bar {
+    width: 33vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+.nav-link:hover {
+    color: var(--third-color);
+    font-weight: bold;
+}
+main {
+    position: static;
+    margin-top: 10vh;
+    background-color: var(--third-color);
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-input h2 {
+    margin: 1rem;
+    color: var(--main-color);
+}
+#form {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#form input{
+    padding: 0.3rem;
+}
+#submit {
+    background-color: #7C14D7;
+    color: var(--third-color);
+    padding: 0.3rem;
+    border: 0;
+}
+#submit:hover {
+    transform: scale(110%);
+    cursor: pointer;
+}
+#features {
+    margin: 5rem 0;
+}
+.feature-detail {
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+.feature-icon {
+    width: 30vw;
+    text-align: center;
+    font-size: 5vw;
+    color: var(--main-color);
+}
+.feature-desc {
+    text-align: start;
+}
+.feature-desc h2 {
+    color: var(--main-color);
+}
+#how_it_works {
+    text-align: center;
+    margin: 5rem 0;
+}
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+}
+.price-card {
+    width: 33vw;
+    border: 1px solid black;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-card h3 {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--main-color);
+}
+.price-card>p {
+    padding: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+.price-card button {
+    padding: 0.3rem;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    border: 0;
+}
+.price-card-desc {
+    text-align: center;
+}
+footer {
+    padding: 1rem;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
+    background-color: var(--fourth-color);
+}
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        width: 100vw;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--main-color);
+    }
+    #nav-bar {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+  }
